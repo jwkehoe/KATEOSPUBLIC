@@ -8,6 +8,8 @@ Start with [QUICKSTART.md](QUICKSTART.md). Read
 [PUBLIC_BOUNDARIES.md](PUBLIC_BOUNDARIES.md) before installing it into a
 provider surface. Use [FIRST_RECOVERY_EXERCISE.md](FIRST_RECOVERY_EXERCISE.md)
 to check whether a documented correction governs adjacent and resumed work.
+For a short, plain-language map of the files, read
+[README_ELI10.md](README_ELI10.md).
 
 ## What is included
 
