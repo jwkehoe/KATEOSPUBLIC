@@ -2,6 +2,14 @@
 
 ## KateOSPUBLIC V2
 
+> Copyright © 2026 Exotic Problems LLC. All rights reserved except for the
+> limited permissions in the [EP Public Review and Individual-Use License
+> v1.0](LICENSE.md). This paper is source-available for individual reading,
+> review, and local use. Commercial use, redistribution, hosted or managed
+> service use, cloud-provider use, enterprise deployment, consulting, and
+> training require prior written permission. The paper is provided as is,
+> without warranty, and is not professional advice.
+
 ## Public derivative note
 
 This is a public method paper and source companion for KateOS Base. It explains
@@ -104,6 +112,19 @@ If a user installs a core into a provider instruction surface, that is a
 separate change. Preserve the prior setting privately, read back what was
 saved, run a smoke task, and retain a rollback path. The local source remains
 evidence of intent, not evidence of provider application.
+
+## 4.1 Public-use boundary
+
+KateOS Base is published for individual reading, inspection, and local use. It
+is source-available rather than open source. The public license reserves
+commercial, provider, managed-service, enterprise, redistribution, consulting,
+and training rights to Exotic Problems LLC. This keeps the public method open
+to scrutiny without granting a cloud provider permission to turn it into a
+service.
+
+The license does not promise that the method will fit a particular situation or
+produce a particular result. Users remain responsible for their own judgment,
+testing, validation, safeguards, and professional advice where appropriate.
 
 ## 5. Check recovery through the work
 
@@ -1348,4 +1369,280 @@ read it back, and preserve the resulting record privately. Do not claim that a
 local file proves provider placement, runtime application, recovery, or user
 acceptance.
 
+````
+
+## Appendix P.30 — `README.md`
+
+Current public source file. This is the repository entry point and names the
+license boundary.
+
+````markdown
+# KateOS Base
+
+KateOS Base is a portable set of working rules and local files for preserving
+objectives, source authority, corrections, task state, and recovery checks
+across AI-assisted work.
+
+Start with [QUICKSTART.md](QUICKSTART.md). Read
+[PUBLIC_BOUNDARIES.md](PUBLIC_BOUNDARIES.md) before installing it into a
+provider surface. Use [FIRST_RECOVERY_EXERCISE.md](FIRST_RECOVERY_EXERCISE.md)
+to check whether a documented correction governs adjacent and resumed work.
+For a short, plain-language map of the files, read
+[README_ELI10.md](README_ELI10.md).
+
+## License and use
+
+KateOS Base is source-available under the
+[EP Public Review and Individual-Use License v1.0](LICENSE.md). An individual
+may read, inspect, and use it privately for that person's own local work.
+
+Commercial use requires written permission from Exotic Problems LLC. That
+includes resale, redistribution, consulting, training, enterprise use, and
+hosting or including KateOS in a cloud, SaaS, API, managed-service, or other
+third-party offering. Read [COMMERCIAL_LICENSING.md](COMMERCIAL_LICENSING.md)
+before proposing that kind of use. Name and logo use is covered by
+[TRADEMARKS.md](TRADEMARKS.md).
+
+The Materials are provided as is, without warranty, and are not professional
+advice. The complete terms are in [LICENSE.md](LICENSE.md).
+
+## What is included
+
+- Global and project-level working rules.
+- Voice, evidence, recovery, and claim-boundary prompts.
+- Operations and evaluation templates.
+- Append-only checkpoint policy and template.
+- Backup and recovery utilities for local configuration.
+
+## What is excluded
+
+Personal source banks, live session records, provider-memory exports, client
+material, credentials, and restricted sources are not part of this repository.
+
+## Local configuration backup
+
+Before a first installation or configuration change, run
+`scripts/kateos_backup_config.sh`. It creates a permanent original copy and a
+timestamped archive in `~/KATOSBACKUP/`. Use
+`scripts/kateos_recover_config.sh` to inspect or restore a named archive.
+
+These utilities handle local files. A provider-side setting still needs a
+private backup, read-back, smoke test, and explicit confirmation before change.
+````
+
+## Appendix P.31 — `LICENSE.md`
+
+Current public source file. This license controls use of the public Base.
+
+````markdown
+# EP Public Review and Individual-Use License v1.0
+
+**Effective date:** September 26, 2026
+**Licensor:** Exotic Problems LLC, an Illinois limited liability company
+
+## 1. The material covered
+
+This license covers the KateOS Base materials in this repository, including
+source files, prompts, templates, documentation, scripts, examples, and the
+paper *Continuity Fracture: Preserving Collaborative Intelligence Working
+Patterns* (together, the **Materials**).
+
+The Materials are source-available. They are not open source under an
+Open Source Initiative-approved license.
+
+## 2. What an individual may do
+
+Subject to this license, an individual person may:
+
+- read, download, copy, and print the Materials for personal reference;
+- inspect and evaluate the Materials;
+- use the Materials privately and locally for that person's own work,
+  learning, research, and reflection; and
+- make private adaptations for that person's own use.
+
+An individual does not lose these permissions merely because that person is
+employed. The permission does not authorize use of the Materials as an
+organization's shared operating system, product feature, service, training,
+or deliverable.
+
+## 3. Review, quotation, and attribution
+
+You may quote reasonable portions of the Materials for review, criticism,
+scholarship, reporting, or discussion. You must identify Exotic Problems LLC
+as the source, retain applicable copyright and license notices, and identify
+material changes when you describe or distribute an adapted excerpt.
+
+Nothing in this license limits rights that cannot lawfully be limited,
+including applicable copyright exceptions and limitations.
+
+## 4. What requires written permission
+
+The following require prior written permission from Exotic Problems LLC and,
+where applicable, a separate commercial agreement:
+
+- selling, licensing, sublicensing, renting, or redistributing the Materials
+  or a substantial portion of them;
+- using the Materials to provide paid consulting, implementation, training,
+  certification, support, or other services to a third party;
+- using the Materials as part of a paid product, service, platform, or
+  enterprise-wide operating program;
+- hosting, operating, embedding, exposing, or making the Materials or a
+  substantial part of their functionality available to third parties through
+  a cloud service, SaaS product, API, managed service, service bureau, or
+  similar offering;
+- white-labeling the Materials, presenting them as your own work, or removing
+  or obscuring authorship, copyright, license, provenance, or change notices;
+- publishing or distributing a modified version of the Materials, except for
+  reasonable attributed quotations under Section 3; and
+- using the Materials to train, tune, evaluate, or supply a commercial model,
+  product, or service for third parties.
+
+For this license, **Commercial Use** means use intended to generate revenue,
+support a paid offering, deliver value to a third party for compensation, or
+advance a product or service made available to third parties. A person's
+private use does not become Commercial Use only because the person has a job.
+
+## 5. Ownership and reserved rights
+
+The Materials are licensed, not sold. Exotic Problems LLC and its licensors
+retain all rights not expressly granted by this license. No patent, trademark,
+service-mark, trade-name, publicity, endorsement, or implied license is
+granted.
+
+The names “Exotic Problems,” “EP,” and “KateOS,” along with associated logos
+and identifiers, are reserved. You may use them only to truthfully identify
+the origin of unmodified Materials or to provide attribution required by this
+license. You may not use them to imply sponsorship, endorsement, affiliation,
+certification, or authorship.
+
+See [TRADEMARKS.md](TRADEMARKS.md) for the public trademark-use policy.
+
+## 6. No warranty; use at your own risk
+
+The Materials are provided **as is** and **as available**, without warranties
+or conditions of any kind, whether express, implied, statutory, or otherwise.
+To the maximum extent permitted by law, Exotic Problems LLC disclaims all
+warranties, including accuracy, completeness, reliability, timeliness,
+merchantability, fitness for a particular purpose, title, non-infringement,
+security, availability, and freedom from errors or harmful code.
+
+You are responsible for deciding whether and how to use the Materials. They
+are not legal, medical, financial, security, compliance, engineering,
+employment, or other professional advice. They do not replace independent
+judgment, testing, validation, safeguards, or qualified professional advice.
+
+Access to or use of the Materials does not create a client, advisory,
+fiduciary, employment, partnership, joint-venture, agency, or other
+professional relationship with Exotic Problems LLC or any contributor.
+
+## 7. Limitation of liability
+
+To the maximum extent permitted by law, Exotic Problems LLC, its owners,
+contributors, licensors, and affiliates are not liable for any claim, loss,
+damage, cost, or expense arising out of or related to the Materials, this
+license, or your use of or inability to use the Materials.
+
+This exclusion includes direct, indirect, incidental, special, exemplary,
+punitive, and consequential damages; loss of data, business, revenue, profit,
+goodwill, opportunity, privacy, or reputation; service interruption; system
+failure; and the cost of substitute goods or services, even if Exotic Problems
+LLC was advised that such harm was possible.
+
+Where liability cannot lawfully be excluded, Exotic Problems LLC's total
+aggregate liability for all claims related to the Materials or this license
+will not exceed the greater of (a) the amount you paid Exotic Problems LLC for
+the affected Materials in the twelve months before the event giving rise to the
+claim or (b) US $100.
+
+## 8. Governing law
+
+This license is governed by the laws of the State of Illinois, without regard
+to conflict-of-law rules. Mandatory consumer-protection or other rights that
+cannot lawfully be waived remain unaffected.
+
+## 9. General terms
+
+If a provision of this license is unenforceable, the remaining provisions stay
+in effect. A failure to enforce a provision is not a waiver. This license is
+the entire agreement concerning the Materials unless Exotic Problems LLC and
+you sign a separate written agreement that says it replaces or supplements
+this license.
+
+Questions and commercial-license requests: [john.kehoe@protonmail.com](mailto:john.kehoe@protonmail.com).
+````
+
+## Appendix P.32 — `NOTICE`
+
+Current public source file. This short notice follows the repository and
+identifies the ownership and commercial-use boundary.
+
+````text
+KateOS Base and the accompanying public materials
+Copyright © 2026 Exotic Problems LLC. All rights reserved except for the
+limited permissions in the EP Public Review and Individual-Use License v1.0.
+
+KateOS is an Exotic Problems framework. “Exotic Problems,” “EP,” and “KateOS”
+are reserved names and identifiers. The license does not grant trademark,
+endorsement, certification, or affiliation rights.
+
+Commercial use, resale, hosted or managed services, cloud-provider use,
+enterprise deployment, consulting, training, and redistribution require prior
+written permission from Exotic Problems LLC.
+
+See LICENSE.md, COMMERCIAL_LICENSING.md, and TRADEMARKS.md.
+````
+
+## Appendix P.33 — `COMMERCIAL_LICENSING.md`
+
+Current public source file. It provides the route for use beyond individual
+local use.
+
+````markdown
+# Commercial licensing
+
+KateOS Base is published so an individual can read it, inspect it, and use it
+for that individual's own local work. Those permissions do not cover
+commercial use.
+
+You need a separate written agreement from Exotic Problems LLC before you:
+
+- sell or redistribute KateOS materials;
+- include KateOS in a paid product, service, course, or enterprise program;
+- use KateOS to provide consulting, implementation, training, certification,
+  support, or managed operation for someone else; or
+- host, expose, embed, or operate KateOS through a cloud service, SaaS product,
+  API, managed service, service bureau, or other third-party offering.
+
+Send a short description of the proposed use to
+[john.kehoe@protonmail.com](mailto:john.kehoe@protonmail.com). A commercial
+agreement can define the permitted scope, term, price, support, attribution,
+branding, data handling, and any provider-specific terms.
+
+Until a written agreement is signed, the public license in
+[LICENSE.md](LICENSE.md) governs.
+````
+
+## Appendix P.34 — `TRADEMARKS.md`
+
+Current public source file. The public license does not grant name or
+endorsement rights.
+
+````markdown
+# KateOS and Exotic Problems name use
+
+“Exotic Problems,” “EP,” and “KateOS,” along with their logos and related
+identifiers, are reserved names of Exotic Problems LLC or its licensors.
+
+The EP Public Review and Individual-Use License allows truthful attribution:
+
+> “Based on KateOS from Exotic Problems LLC.”
+
+It does not allow you to name a product, service, organization, course,
+certification, or managed offering “KateOS,” “Exotic Problems,” or a
+confusingly similar name. It also does not allow any statement or presentation
+that implies Exotic Problems LLC wrote, endorsed, certified, sponsored, or is
+affiliated with your work.
+
+Questions about name, logo, or co-branding use belong in a written agreement:
+[john.kehoe@protonmail.com](mailto:john.kehoe@protonmail.com).
 ````

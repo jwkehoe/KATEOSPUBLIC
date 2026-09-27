@@ -11,6 +11,22 @@ to check whether a documented correction governs adjacent and resumed work.
 For a short, plain-language map of the files, read
 [README_ELI10.md](README_ELI10.md).
 
+## License and use
+
+KateOS Base is source-available under the
+[EP Public Review and Individual-Use License v1.0](LICENSE.md). An individual
+may read, inspect, and use it privately for that person's own local work.
+
+Commercial use requires written permission from Exotic Problems LLC. That
+includes resale, redistribution, consulting, training, enterprise use, and
+hosting or including KateOS in a cloud, SaaS, API, managed-service, or other
+third-party offering. Read [COMMERCIAL_LICENSING.md](COMMERCIAL_LICENSING.md)
+before proposing that kind of use. Name and logo use is covered by
+[TRADEMARKS.md](TRADEMARKS.md).
+
+The Materials are provided as is, without warranty, and are not professional
+advice. The complete terms are in [LICENSE.md](LICENSE.md).
+
 ## What is included
 
 - Global and project-level working rules.
