@@ -1,0 +1,17 @@
+# Subscription usage and burn
+
+Authority: 2026-10-05 authorized public feature release. KateOS operational module; version 1.
+
+For substantial KateOS work, capture available allowance at start, meaningful milestones (normally no more often than every 15 minutes), model/effort changes, and close. Use the Codex `get_usage_limits` tool when present. This is an agent workflow, not a background hook. A host must load these instructions to perform captures. Read-only usage checks and local ledger appends are authorized by this module; purchasing credits, using reset credits, changing plans, and provider settings remain separate decisions.
+
+Persist counters with `scripts/usage_burn.py capture` in `LOCAL/usage-burn/ledger.jsonl`. This local-only path is ignored by Git. Whitelist window counters; never persist account IDs, reset-credit IDs, credentials, or whole account responses. Record project, observed timestamp with timezone, source, known model/effort/speed, concurrent activity, completed work units, and outcome. Unknown model is valid; a screenshot of a picker does not establish selection.
+
+Use pool `codex-work` for the shared Codex/Work allowance. Ordinary Chat model quotas require their own observed UI/user-reported counters and separate pool names. No current tool here exposes ordinary Chat quotas. When unavailable, report unknown and continue independent work. Do not estimate Chat quota from Codex usage, local token logs, API prices, or model marketing. Manual input shape: `{"windows":[{"bucket":"chat-model","name":"messages","unit":"messages","used":3,"capacity":40,"resets_at":1791274543,"duration_minutes":180}]}`. Only supply real observed values; if capacity is unavailable there is no measurable fraction.
+
+Review with `scripts/usage_burn.py review --pool codex-work --planned-hours 2`. Burn is the counter increase in one unchanged window. Percentage burn uses percentage points, not percent growth. Rate = burn / elapsed hours; runway = (remaining minus reserve) / rate; completed-unit cost = interval burn / completed units. Default reserve is 10%, an operating assumption configurable at review. Rates measure sampled elapsed time, including idle time; they do not prove active-compute speed.
+
+Never bridge resets, counter decreases, capacity changes, missing windows, or expired observations. Zero visible burn means below observed counter resolution, not free use or infinite runway. Projections are conditional on similar future work; flag forecast horizons that cross resets. Account-wide counters cannot attribute burn to a project/model when other chats, automations, or workers run. Preserve context and label attribution accordingly. Never turn a before/after delta into a measured model multiplier without controlled comparable tasks.
+
+At review give: current remaining allowance/reset; recent burn and observation span; projected allowance required and reserve; evidence limits/concurrent activity; work achieved and next practical choice. Consider repair time and completion quality alongside low burn. Do not silently lower capability or stop authorized work merely to conserve allowance. Alert at meaningful reserve/exhaustion risk, not every capture. Review both short and weekly windows; the first exhausted window constrains work.
+
+The companion `$kateos-usage-burn` skill provides capture/review routing. Official plan guidance: https://learn.chatgpt.com/docs/pricing (verified 2026-10-05). Plan rules can change; measure actual allowance rather than hardcoding model prices or burn multipliers.

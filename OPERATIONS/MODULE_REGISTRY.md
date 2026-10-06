@@ -7,6 +7,7 @@ authority, evidence boundaries, source restrictions, or current user direction.
 | Class | Module or source | Activate when | Do not use as |
 |---|---|---|---|
 | Kernel-required | `GLOBAL_CORE.md`, `PROMPTS/VOICE_RULES.md`, `PROMPTS/ANTI_PATTERNS.md`, `PROMPTS/CLAIM_BOUNDARIES.md`, `SESSION_STATES/POLICY.md` | Every KateOS task | Proof of host or provider behavior |
+| Core operating | `MODULES/resource-governance/USAGE_BURN.md` and `skills/kateos-usage-burn/` | Substantial work and subscription burn/project reviews | API billing, per-chat attribution, or inaccessible Chat quota evidence |
 | Task-activated | `PROMPTS/HUMANIZER.md` | The user asks to humanize or naturally revise a draft | Permission to change claims, authorship, or evidence |
 | Task-activated | `PROMPTS/GROUNDED_PRESENCE_AND_REPAIR.md` | The user reports relational/style drift, repeated correction failure, or a loss of a previously useful working pattern | Proof of human feeling, persistent identity, provider placement, or recovered runtime behavior |
 | Task-activated | `PROMPTS/BLINDSPOT_AUDIT.md` | Correction, continuity, trust, identity, emotionally charged feedback, or behavior-change work needs a pre-send audit | Proof that a response is unbiased, correct, tested, or accepted |

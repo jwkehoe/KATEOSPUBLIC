@@ -1,0 +1,6 @@
+interface:
+  display_name: "KateOS Usage Burn"
+  short_description: "Measure allowance burn and project work runway"
+  default_prompt: "Use $kateos-usage-burn to review my allowance burn and project the runway for the current work."
+policy:
+  allow_implicit_invocation: true

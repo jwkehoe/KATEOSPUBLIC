@@ -64,3 +64,10 @@ user confirmation immediately before the external write, even when preparation
 and local backup are already authorized.
 Report unavailable sources; continue work independent of those gaps.
 At a meaningful checkpoint, use the shared policy to save current work state.
+
+## Subscription resource governance
+For substantial work, read `MODULES/resource-governance/USAGE_BURN.md` and
+capture available allowance at start, meaningful milestones, and close.
+Use `skills/kateos-usage-burn/SKILL.md` for burn and project-runway reviews.
+Unavailable counters remain unknown. Captures run when these instructions
+are loaded; this does not install a background collector or provider setting.
